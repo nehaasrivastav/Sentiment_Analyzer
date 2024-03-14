@@ -1,5 +1,0 @@
-// config.js
-
-module.exports = {
-    facebookAccessToken: 'EAAKX5EsnDkMBOyagxzYDsqqFg8rTGLHFoohQEAS5ZAahGmZA6ejBwCCEcXI5jd97bZBBJZCWyKeV1RIgVag19Fe2x4HlKjLRYf2ewyZCIucJCQtWbev9cc9zAOALkrsbJS3dUdsgtYbCOlj3f1tlqJZAobJO4Ca12SUdZB1LsOYZAoQ9wtezzPFNnxNHKuybnMoZAjXv0EZCy4asx5aGsZBt0fTWosZD'
-};
