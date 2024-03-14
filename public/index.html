@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment Analyzer</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Sentiment Analysis</h1>
+  <div class="input">
+    <textarea id="commentInput" rows="10" cols="90"></textarea>
+  </div>
+
+  <button id="analyzeButton">Analyze</button>
+  <p id="resultMessage"></p>
+
+  <script>
+    document.getElementById('analyzeButton').addEventListener('click', async () => {
+      const comment = document.getElementById('commentInput').value;
+
+      // Send comment to the backend for analysis
+      const response = await fetch('/analyze-comment', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ comment })
+      });
+
+      // Display analysis result
+      const resultMessage = await response.text();
+      document.getElementById('resultMessage').innerText = resultMessage;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+* {
+    background-color: rgb(54, 52, 52);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: aqua;
+    font-size: 3.4rem;
+}
+
+.input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    color: white;
+}
+
+button {
+    text-align:center;
+    margin: 0 auto;
+    display: block;
+    width: 5rem;
+    height: 3rem;
+    margin-top: 4rem;
+    background-color: rgb(90, 47, 17);
+}
+p{
+    text-align:center;
+}
